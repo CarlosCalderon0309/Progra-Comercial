@@ -1,15 +1,8 @@
-from flask import Flask, render_template, request
+# Branching
 
-app = Flask(__name__)
+## Descripción
 
-@app.route('/', methods=['GET', 'POST'])
-def index():
-    IMC = None
-    if request.method == 'POST':
-        weight = float(request.form['weight'])
-        height = float(request.form['height'])
-        IMC = weight / (height ** 2)
-    return render_template('pag.html', IMC=IMC)
+Este proyecto tiene como objetivo enseñarles a utilizar de manera sencilla el branching, los code reviews y las pull request. 
 
-if __name__ == '__main__':
-    app.run(debug=True)
+## Nombre de Arturo
+Arturo Monterroso - 201608006
